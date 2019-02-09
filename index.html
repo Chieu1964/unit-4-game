@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body backgroud-img>
+
+	<div class="header text-center">
+		<h1>CRYSTALS COLLECTOR</h1>
+		<h3>RANDOM NUMBER:</h3>
+		<h3 id="randomNumber"></h3>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 total text-center">
+				<h3>TOTAL SCORE:</h3>
+				<h3 id="totalScore"></h3>
+			</div>
+			<div class="col-md-6 scores text-center">
+				<p class="score">WINS: <span id="wins"></span></p>
+				<p class="score">LOSSES: <span id="losses"></span></p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 directions">
+
+				<p>Here are four crystals displayed as buttons in front of you.
+					You will see a random number at the start of the game.
+					When you click on a crystal, it will add a specific amount of points to the your total
+					score. Your game will hide this amount until the you click a crystal.
+				</p>
+				<p> You win only if your total score matches the random number from the beginning of the game.
+					The game restarts whenever the you win or lose.
+					When the game begins again, you should see a new random number. Also, all the crystals
+					will have four new hidden values. Of course, your score will reset to
+					zero.
+				</p>
+				<p><b>GOOD LUCK!</b></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<img class="crystalimg" id="crystal1" src="assets/images/crystal-1.png" alt="Crystal 1" />
+			</div>
+			<div class="col-md-3 text-center">
+				<img class="crystalimg" id="crystal2" src="assets/images/crystal-8.png" alt="Crystal 2" />
+			</div>
+			<div class="col-md-3 text-center">
+				<img class="crystalimg" id="crystal3" src="assets/images/crystal-5.png" alt="Crystal 3" />
+			</div>
+			<div class="col-md-3 text-center">
+				<img class="crystalimg" id="crystal4" src="assets/images/crystal-6.png" alt="Crystal 4" />
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-md-12 button">
+				<h3 id="winOrLose"></h3>
+				<button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+</body>
+
+</html>

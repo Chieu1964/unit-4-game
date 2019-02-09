@@ -1,0 +1,80 @@
+html {
+	box-sizing: border-box;
+}
+
+
+body { 
+	background-image: url(../images/crystals-banner-1.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+h3 {
+	margin: 20px 0px 10px 0px;
+	letter-spacing: 3px;
+}
+
+.header {
+	padding: 70px 0px 0px 0px;
+	/* color: grey; */
+}
+
+h3, #randomNumber, #totalScore {
+	color: red;
+}
+
+#wins, #losses, .score {
+	color: green;
+}
+
+h1 {
+	color: rgb(100, 12, 12);
+	margin: 55px 0px 75px 0px;
+	letter-spacing: 10px;
+}
+
+.crystalimg {
+	width: 120px;
+	height: 120px;
+	margin: 30px auto;
+}
+
+.crystalimg:hover {
+	opacity: 0.5;
+}
+
+.directions {
+	color: black;
+	text-align: center;
+	padding: 20px 85px;
+}
+
+
+.score {
+	padding-top: 30px;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+
+#winOrLose {
+	font-size: 30px;
+	color: blue;
+}
+
+.total, .scores, .directions {
+	margin: auto;
+}
+
+.btn {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: violet;
+	/* color: #a182bc; */
+	letter-spacing: 3px;
+}
+
