@@ -3,12 +3,16 @@ html {
 }
 
 
-body { 
+body {
 	background-image: url(../images/crystals-banner-1.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 }
 
+p {
+	font-size: 20px;
+	color: rgb(46, 45, 45);
+}
 
 h3 {
 	margin: 20px 0px 10px 0px;
@@ -16,22 +20,31 @@ h3 {
 }
 
 .header {
-	padding: 70px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	/* color: grey; */
 }
 
-h3, #randomNumber, #totalScore {
-	color: red;
+.target-number, #randomNumber {
+	color: rgb(3, 3, 46);
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+h3, #totalScore {
+	color: rgb(160, 5, 5);
 }
 
 #wins, #losses, .score {
-	color: green;
+	color: rgb(1, 100, 1);
 }
 
 h1 {
 	color: rgb(100, 12, 12);
 	margin: 55px 0px 75px 0px;
 	letter-spacing: 10px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 55px;
+	font-weight: bold;
 }
 
 .crystalimg {
@@ -41,13 +54,16 @@ h1 {
 }
 
 .crystalimg:hover {
-	opacity: 0.5;
+	opacity: 0.4;
 }
 
 .directions {
 	color: black;
+	font-weight: 600;
 	text-align: center;
-	padding: 20px 85px;
+	padding: 50px 25px;
+	text-align: justify;
+	letter-spacing: 1px;
 }
 
 
@@ -59,22 +75,27 @@ h1 {
 	letter-spacing: 3px;
 }
 
+.good-luck {
+	font-size: 36px;
+	font-weight: 900;
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(72, 12, 100);
+	text-align: center;
+	letter-spacing: 3px;
+	line-height: 100px;
+}
+
 
 #winOrLose {
 	font-size: 30px;
 	color: blue;
+	font-weight: 900px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
 }
 
 .total, .scores, .directions {
 	margin: auto;
 }
 
-.btn {
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: violet;
-	/* color: #a182bc; */
-	letter-spacing: 3px;
-}
 

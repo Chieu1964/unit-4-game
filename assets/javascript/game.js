@@ -1,13 +1,13 @@
 // jquery to wrap everything
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     // Before starting game/reset game
     var crystalValue1;
     var crystalValue2;
     var crystalValue3;
     var crystalValue4;
-    var randomNumber; 
+    var randomNumber;
     var totalScore;
     var wins = 0;
     var losses = 0;
@@ -23,7 +23,7 @@ $(document).ready(function() {
         crystalValue4 = Math.floor((Math.random() * 12) + 1);
     };
 
-    
+
     // New game - need to ask TA or instructructor for more understanding about "data-"
 
     function newGame() {
@@ -40,55 +40,85 @@ $(document).ready(function() {
         $("#wins").text(wins);
         $("#winOrLose").text("");
     };
-// newGame();
- 
-// Displaying results
+
+
+    // Displaying results
 
     function youWin() {
-		$("#winOrLose").text("YOU WIN!");
-		wins++;
-        $("#wins").text(wins);
-        
-	}
+        var winer = ["YOU WIN!", "YOU'RE HERO!", "CONTRATULATION! YOU WIN!", "SUPERB!"];
+        winGame = winer[Math.floor(Math.random() * winer.length)];
 
-	function youLose() {
-		$("#winOrLose").text("YOU LOSE");
-		losses++;
-        $("#losses").text(losses);
-       
+        $("#winOrLose").text("YOU WIN!");
+        wins++;
+        $("#wins").text(wins);
+
     }
-    
+
+    function youLose() {
+
+        var loser = ["YOU LOSE!", "What the heck are you doing? You lose!", "OMG! Your stupidity is just unbelievable!"];
+        loseGame = loser[Math.floor(Math.random() * loser.length)];
+
+        $("#winOrLose").text(loseGame);
+        losses++;
+        $("#losses").text(losses);
+
+    }
+
     newGame();
 
     // CLICK on a crystal image
 
-    $(".crystalimg").on("click", function() {
-       
+    $(".crystalimg").on("click", function () {
+
         if (totalScore >= randomNumber) {
-			return;
+            return;
         }
-       
+
         var crystalValue = $(this).attr("data-crystalvalue"); // need more understanding about "$(this)"
         crystalValue = parseInt(crystalValue);
         totalScore += crystalValue;
+
         $("#totalScore").text(totalScore);
-        
+
         if (totalScore === randomNumber) {
             youWin();
-           
+            var source = "assets/audio/Horse-whinny.mp3"
+            var audio = document.createElement("audio");
+            //
+            audio.autoplay = true;
+            //
+            audio.load()
+            audio.addEventListener("load", function () {
+                audio.play();
+            }, true);
+            audio.src = source;
+
+            setTimeout(newGame, 3000);
+
         } else if (totalScore > randomNumber) {
             youLose();
-           
+
+            var source = "assets/audio/Cat-meow-noise.mp3"
+            var audio = document.createElement("audio");
+            //
+            audio.autoplay = true;
+            //
+            audio.load()
+            audio.addEventListener("load", function () {
+                audio.play();
+            }, true);
+            audio.src = source;
+
+            setTimeout(newGame, 3000);
+
         }
 
-    });
-
-    $(".btn").on("click", function(){
-        newGame();
 
     });
-
 
 });
+
+
 
 
