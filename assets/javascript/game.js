@@ -45,10 +45,10 @@ $(document).ready(function () {
     // Displaying results
 
     function youWin() {
-        var winer = ["YOU WIN!", "YOU'RE HERO!", "CONTRATULATION! YOU WIN!", "SUPERB!"];
+        var winer = ["YOU WIN!", "YOU'RE HERO!", "CONTRATULATION!", "SUPERB!", "FANTASTIC!"];
         winGame = winer[Math.floor(Math.random() * winer.length)];
 
-        $("#winOrLose").text("YOU WIN!");
+        $("#winOrLose").text(winGame);
         wins++;
         $("#wins").text(wins);
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     function youLose() {
 
-        var loser = ["YOU LOSE!", "What the heck are you doing? You lose!", "OMG! Your stupidity is just unbelievable!"];
+        var loser = ["YOU LOSE!", "What the heck! You lose!", "OMG! Your stupidity is just unbelievable!", "You have another chance to do it better!"];
         loseGame = loser[Math.floor(Math.random() * loser.length)];
 
         $("#winOrLose").text(loseGame);
@@ -94,7 +94,7 @@ $(document).ready(function () {
             }, true);
             audio.src = source;
 
-            setTimeout(newGame, 3000);
+            setTimeout(newGame, 4000);
 
         } else if (totalScore > randomNumber) {
             youLose();
@@ -110,7 +110,7 @@ $(document).ready(function () {
             }, true);
             audio.src = source;
 
-            setTimeout(newGame, 3000);
+            setTimeout(newGame, 4000);
 
         }
 

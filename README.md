@@ -15,7 +15,6 @@ The game will hide this amount until the player clicks a crystal. When they do c
 
 6. The player will lose if his/her score goes above the random number.
 
-7. When the player wins or loses, the game will automatically restart in 3 second.
+7. When the player wins or loses, the game will automatically restart in 5 second.
 
-8. When the game begins again, the player should see a new random number. Also, all the crystals
-will have new hidden values, and the score counter will reset to zero. However, the number of games the players wins and loses will remain and be updated at the end of each game.
+8. When the game begins again, a new random number is shown, and new hidden values will be assigned to all crystals, and the score counter will reset to zero. However, the number of games the players wins and loses will remain and be updated at the end of each game.
