@@ -48,9 +48,9 @@ h1 {
 }
 
 .crystalimg {
-	width: 120px;
-	height: 120px;
-	margin: 30px auto;
+	width: 110px;
+	height: 110px;
+	/* margin: 10px auto; */
 }
 
 .crystalimg:hover {
@@ -87,7 +87,7 @@ h1 {
 
 
 #winOrLose {
-	font-size: 30px;
+	font-size: 36px;
 	color: rgb(3, 3, 114);
 	font-weight: 900px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -97,5 +97,12 @@ h1 {
 .total, .scores, .directions {
 	margin: auto;
 }
+
+/* 
+#winImage {
+	width: 100px;
+	height: 100px;
+} 
+*/
 
 

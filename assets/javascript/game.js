@@ -45,18 +45,23 @@ $(document).ready(function () {
     // Displaying results
 
     function youWin() {
-        var winer = ["YOU WIN!", "YOU'RE HERO!", "CONTRATULATION!", "SUPERB!", "FANTASTIC!"];
+        var winer = ["You win!", "You rock!", "You did it!", "Way to go!", "Super job!", "Thumbs up!", "Way cool!", "Yea!", "Super work!"];
         winGame = winer[Math.floor(Math.random() * winer.length)];
+
+        // var winImage = "assets/images/smiley-1.png";
+        // $("#winImage").attr("src",winImage);
+        // setTimeout(winImage, 4000);
 
         $("#winOrLose").text(winGame);
         wins++;
         $("#wins").text(wins);
-
+        
+        
     }
 
     function youLose() {
 
-        var loser = ["YOU LOSE!", "What the heck! You lose!", "OMG! Your stupidity is just unbelievable!", "You have another chance to do it better!"];
+        var loser = ["You lose!", "Keep calm because you lost the game!", "You just lost! Why so serious?", "Oopsie Whoopsie! You just lost!", "Bad new! You lost!"];
         loseGame = loser[Math.floor(Math.random() * loser.length)];
 
         $("#winOrLose").text(loseGame);
