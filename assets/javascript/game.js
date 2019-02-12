@@ -1,8 +1,12 @@
+
+
+
 // jquery to wrap everything
 
 $(document).ready(function () {
 
-    // Before starting game/reset game
+    // Before starting game
+
     var crystalValue1;
     var crystalValue2;
     var crystalValue3;
@@ -12,7 +16,7 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
-    //  Create {random number and values for each crystal
+    //  Create random number and random values for each crystal
 
     function newNumbers() {
         totalScore = 0;
@@ -24,7 +28,7 @@ $(document).ready(function () {
     };
 
 
-    // New game - need to ask TA or instructructor for more understanding about "data-"
+    // New game || Reset game => need to ask TA or instructructor for more understanding about "data-"
 
     function newGame() {
         newNumbers();
@@ -45,7 +49,7 @@ $(document).ready(function () {
     // Displaying results
 
     function youWin() {
-        var winer = ["You win!", "You rock!", "You did it!", "Way to go!", "Super job!", "Thumbs up!", "Way cool!", "Yea!", "Super work!"];
+        var winer = ["You win!", "You rock!", "You did it!", "Way to go!", "Super job!", "Thumbs up!", "Way cool!", "Yea!", "Super work!", "You the MPV!"];
         winGame = winer[Math.floor(Math.random() * winer.length)];
 
         // var winImage = "assets/images/smiley-1.png";
@@ -61,7 +65,7 @@ $(document).ready(function () {
 
     function youLose() {
 
-        var loser = ["You lose!", "Keep calm because you lost the game!", "You just lost! Why so serious?", "Oopsie Whoopsie! You just lost!", "Bad new! You lost!"];
+        var loser = ["You lose!", "Keep calm because you lost the game!", "You just lost! Why so serious?", "Oopsie Whoopsie! You just lost!", "Bad new! You lost!", "Ha! Sucker!", "Better luck next time!"];
         loseGame = loser[Math.floor(Math.random() * loser.length)];
 
         $("#winOrLose").text(loseGame);
