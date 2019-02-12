@@ -50,7 +50,7 @@ h1 {
 .crystalimg {
 	width: 110px;
 	height: 110px;
-	/* margin: 10px auto; */
+	margin: 10px auto;
 }
 
 .crystalimg:hover {
@@ -82,9 +82,9 @@ h1 {
 
 .scores {
 	background-color: rgb(71, 3, 51);
-	opacity: 0.6;
+	opacity: 0.5;
 	border-radius: 20px;
-	border: 3px solid rgb(34, 1, 28);
+	border: 4px solid rgb(17, 0, 15);
 }
 
 .good-luck {

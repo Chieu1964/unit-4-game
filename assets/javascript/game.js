@@ -52,15 +52,11 @@ $(document).ready(function () {
         var winer = ["You win!", "You rock!", "You did it!", "Way to go!", "Super job!", "Thumbs up!", "Way cool!", "Yea!", "Super work!", "You the MPV!"];
         winGame = winer[Math.floor(Math.random() * winer.length)];
 
-        // var winImage = "assets/images/smiley-1.png";
-        // $("#winImage").attr("src",winImage);
-        // setTimeout(winImage, 4000);
-
         $("#winOrLose").text(winGame);
         wins++;
         $("#wins").text(wins);
-        
-        
+
+
     }
 
     function youLose() {
